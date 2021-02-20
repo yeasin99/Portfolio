@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+body{
+    margin: 0;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+
+
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    width: 70px;
+}
+
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+
+}
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+   width: 100%;
+}
+
+.navbar{
+    background-color: rgb(36, 162, 235);
+    padding: 1% 7%;
+    text-align: center;
+} 
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding: 10px;
+
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.navbar-menu a{
+background-color: rgb(130, 240, 130);
+border-radius: 10px;
+margin: 7px;
+padding: 10px;
+}
+.navbar-menu a:hover{
+    background-color: rgb(84, 85, 82);
+}
+.navbar:after{
+    content: ' ';
+    display: table;
+    clear:both;
+}
+.nav-logo{
+    width: 20px;
+    float: left;
+}
+.navbar .nav-logo img{
+    width: 220px;
+}
+.navbar-menu{
+    width: 10px;
+    height: 10px;
+
+    
+} 
+
+
+.profile{
+    padding: 130px 20px;
+    position: relative;
+    text-align: center;
+}
+.profile .top-weather-icon{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition:transform 2s;
+}
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+    right: 60px;
+    top: 20px;
+}
+.profile .bottom-weather-icon{
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+    transition:transform 2s;
+}
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+    right: 60px;
+    top: 20px;
+}
+
+
+.profile-desc h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 4rem;
+
+}
+.profile-desc p{
+    color: crimson;
+    margin: 0 auto 20px auto;
+    width: 90%;
+
+}
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+
+
+}
+
+.about-me{
+    background-color: burlywood;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+.about-me::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+.aboutme-image img{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+    
+}
+.about-me p{
+    text-align: center;
+}
+.about-me a{
+    font-size: 1.2rem;
+}
+.cv-button{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+}
+.professional-experience{
+    padding: 2% 0%;
+
+}
+.professional-experience .card{
+    background-color: rgba(42, 122, 10, 0.795);
+    border-radius: 5px;
+    padding: 10px;
+    transition: o.3s;
+    height: 550px;
+}
+.professional-experience .card:hover{
+box-shadow: 0 4px 8px 7px  rgb(204, 106, 15);
+
+}
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    height: 100px;
+    margin-top: 20px;
+   
+    
+}
+.roundded-img{
+    border: 5px solid rgb(34, 105, 93);
+    border-radius: 50%;
+    padding: 5px;
+
+}
+.card-title h2{ background-color: rgb(34, 105, 93);
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+.professional-experience::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+.skill-container{
+    padding-right: 40px;
+}
+.skill-container li{
+    list-style: none;
+    margin: 15px 5px;
+    font-weight: bolder;
+    position: relative;
+    text-transform: uppercase;
+
+}
+.skill-container li::before{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 10px;
+    color: bisque;
+    top: calc(100%  + 5px);
+
+}
